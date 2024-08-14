@@ -10,7 +10,8 @@ const getOneAnime = async (animeId) => {
   return anime;
 };
 
-const createOneAnime = async (name, description) => {
+const createOneAnime = async (animeEntry) => {
+  const {name, description} = animeEntry
   const newAnime = await db.one(
     "INSERT INTO animes (name, description) VALUES ($1, $2) RETURNING *",
     [name, description]

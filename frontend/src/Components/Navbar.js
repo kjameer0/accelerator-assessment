@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom"
 
 export default function Navbar() {
     return (
@@ -7,9 +7,10 @@ export default function Navbar() {
                 <h1 className='title'>Animania</h1>
             </section>
             <section className='navbar-sub-section'>
-                <p>Anime</p>
+                <Link to='/'><p>Anime</p></Link>
                 <p>Cartoons</p>
                 <p>random</p>
+                <Link to='/new'> <p>New Anime</p></Link>
             </section>
         </nav>
     )

@@ -1,13 +1,4 @@
 
-
-
-
-// props = {
-//     name:'Jose',
-//     secondName:'Mejia',
-//     middleName:'Ivan'
-// }
-
 export default function Names({ name }) {
     return (
         <div>
